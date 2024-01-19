@@ -1,15 +1,27 @@
 class Storage{
-    #item=[];
+    constructor(items){
+        this.items=items;
+    };
     getItems(){
-        return this.#item;
+        return this.items;
     };
     addItem(newItem){
-        this.#item.push(newItem);
+        this.items=newItem;
     };
     removeItem(itemToRemove){
-        constructor(item){this.#item=item};
-        this.#item=this.#item.filter(product=>product!==itemToRemove)
+        
     }
+    // #item=[];
+    // getItems(){
+    //     return this.#item;
+    // };
+    // addItem(newItem){
+    //     this.#item.push(newItem);
+    // };
+    // removeItem(itemToRemove){
+    //     constructor(item){this.#item=item};
+    //     this.#item=this.#item.filter(product=>product!==itemToRemove)
+    // }
 }
 
 
