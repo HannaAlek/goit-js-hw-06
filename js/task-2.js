@@ -6,22 +6,11 @@ class Storage{
         return this.items;
     };
     addItem(newItem){
-        this.items=newItem;
+        this.items.push(newItem);
     };
     removeItem(itemToRemove){
-        
-    }
-    // #item=[];
-    // getItems(){
-    //     return this.#item;
-    // };
-    // addItem(newItem){
-    //     this.#item.push(newItem);
-    // };
-    // removeItem(itemToRemove){
-    //     constructor(item){this.#item=item};
-    //     this.#item=this.#item.filter(product=>product!==itemToRemove)
-    // }
+        this.items=this.items.filter(item=>item!==itemToRemove)
+    };
 }
 
 
